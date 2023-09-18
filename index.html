@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper scissors</title>
-</head>
-<body>
-    <div>
-        <h1>Rock Paper Scissors Game</h1>
-        <h2>Computer Choice: <span id="computer-choice"></span></h2>
-        <h2>User Choice: <span id="user-choice"></span></h2>
-        <h2>Result: <span id="result"></span></h2>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rock Paper Scissors Game</h1>
 
-        <div>
-            <h3>Score</h3>
-            <p>User Score: <span id="user-score"></span></p>
-            <p>Computer Score: <span id="computer-score"></span></p>
-            <p>Draws: <span id="draw-score"></span></p>
+      <div class="choices">
+        <h4>Computer Choice: <span id="computer-choice"></span></h4>
+        <h4>User Choice: <span id="user-choice"></span></h4>
+      </div>
+
+      
+
+      <div class="container-score">
+        <h3>Score</h3>
+        <div class="scores">
+          <p>User Score: <span id="user-score"></span></p>
+          <p>Computer Score: <span id="computer-score"></span></p>
+          <p>Draws: <span id="draw-score"></span></p>
         </div>
+      </div>
 
+      <h4>Result: <span id="result"></span></h2>
+
+      <div class="actions">
         <button id="rock">Rock</button>
         <button id="paper">Paper</button>
         <button id="scissors">Scissors</button>
+      </div>
     </div>
 
     <script src="app.js" charset="UTF-8"></script>
-</body>
+  </body>
 </html>
